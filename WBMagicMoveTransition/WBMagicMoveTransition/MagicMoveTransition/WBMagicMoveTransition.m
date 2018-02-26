@@ -93,9 +93,9 @@
     #pragma 移动
     CGRect finalFrame = [containerView convertRect:toVC.headerView.iconImageView.frame fromView:toVC.headerView.iconImageView.superview];
     //todo：终点坐标需要设置为目标frame！！！
-    finalFrame = CGRectMake(20, 87, 100, 100);
+    finalFrame = CGRectMake(20, 85, 100, 100);
     if (finalFrame.origin.x == 0 && finalFrame.origin.y == 0) {
-        finalFrame = CGRectMake(20, 87, 100, 100);
+        finalFrame = CGRectMake(20, 85, 100, 100);
     }
     [UIView animateWithDuration:[self transitionDuration:transitionContext]+0.15f delay:0.0f usingSpringWithDamping:0.75f initialSpringVelocity:1.0f options:UIViewAnimationOptionCurveEaseInOut animations:^{
         [containerView layoutIfNeeded];
